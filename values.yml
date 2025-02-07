@@ -1,0 +1,12 @@
+rgWhitelist: github.com/ArnasAndrulis1105/*
+orgAllowlist: github.com/ArnasAndrulis1105/*
+
+github:
+   user: <Username>
+   token: <Token> 
+   secret: <"Secret">
+   hostname: <"Hostname">
+
+service:
+  type: NodePort
+  nodePort: <NodePort(etc.if 30000 is taken, try 30001)>
