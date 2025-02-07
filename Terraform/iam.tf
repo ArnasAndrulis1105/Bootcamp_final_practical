@@ -1,3 +1,15 @@
+variable "eks_admin_role_name" {
+  description = "Name of the IAM role for EKS admin access"
+  type        = string
+  default     = "eks-admin"
+}
+
+variable "eks_read_only_role_name" {
+  description = "Name of the IAM role for EKS read-only access"
+  type        = string
+  default     = "eks-read-only"
+}
+
 resource "aws_iam_role" "eks_admin" {
   name = "eks-admin"
   assume_role_policy = jsonencode({
